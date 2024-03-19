@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import {useAuth0, Auth0Provider} from 'react-native-auth0';
-
-
+import { Auth0Provider} from 'react-native-auth0';
+const domain = process.env.AUTH0_DOMAIN
+const clientId = process.env.AUTH0_CLIENT_ID
 export default function App() {
+
   return (
-    <Auth0Provider domain={"dev-yvjlhl6uwwla5iyq.eu.auth0.com"} clientId={"j8pVmeTrXDAAlBUsEIPIEyIQKolzZtvY"}>
+    <Auth0Provider domain={domain} clientId={clientId}>
       <View style={styles.container}>
         <Text>Open up App.js to start working on your vamos a ver si funciona</Text>
         <StatusBar style="auto" />
