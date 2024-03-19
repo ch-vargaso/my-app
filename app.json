@@ -15,16 +15,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cveloop.myapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cveloop.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-yvjlhl6uwwla5iyq.eu.auth0.com"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "22a62e20-2d99-46fe-b198-96234e6561ce"
+      }
     }
   }
 }
