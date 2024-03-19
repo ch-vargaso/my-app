@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Auth0Provider domain={domain} clientId={clientId}>
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your vamos a ver si funciona</Text>
+        <Text>Integratin Auth0 with Expo</Text>
         <StatusBar style="auto" />
       </View>
     </Auth0Provider>
